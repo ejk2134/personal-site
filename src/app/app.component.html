@@ -1,66 +1,67 @@
 <div fxLayout>
   <!-- Left column -->
   <div class="column" fxFlex="65%" fxLayout="column" fxLayoutAlign="start center">
-    <div id="name">
-      <h5 matTooltip="My name">Evan Kearney</h5>
-    </div>
     <div>
-      <mat-expansion-panel>
-        <mat-expansion-panel-header>
-          <mat-panel-title>
-            My Projects
-          </mat-panel-title>
-        </mat-expansion-panel-header>
-        <mat-expansion-panel>
-          <mat-expansion-panel-header>
-            <mat-panel-title>
-              Snowflake Scheduling App
-            </mat-panel-title>
-          </mat-expansion-panel-header>
-          <p>
-            An app designed to simplify scheduling an event for multiple attendees, who all have gnarly schedules. Built with Node, Express,
-            AngularJS, using a Mongo database and Mongoose, styled using AngularJS Material.
-          </p>
-          <ul>
-            <li>
-              <a href="https://snowflakeschedules.herokuapp.com">The app</a>
-            </li>
-            <li>
-              <a href="https://github.com/ejk2134/snowflake">The code</a>
-            </li>
-          </ul>
-        </mat-expansion-panel>
-        <mat-expansion-panel>
-          <mat-expansion-panel-header>
-            <mat-panel-title>
-              Todo list
-            </mat-panel-title>
-          </mat-expansion-panel-header>
-          <p>
-            Add the things you need to do, send them to your trusty database, check them off when you're done, and delete them. Rinse,
-            repeat. Enjoy all the pretty colors while you do it. Built with Node, Express, jQuery, a SQL database using Postgres,
-            styled with Bootstrap.
-          </p>
-          <ul>
-            <li>
-              Not currently deployed
-            </li>
-            <li>
-              <a href="https://github.com/ejk2134/todolist">The code</a>
-            </li>
-          </ul>
-        </mat-expansion-panel>
-      </mat-expansion-panel>
-    </div>
-    <div>
-      <h4>Weightlifting</h4>
-      <p>
-        One of my hobbies is weightlifting. Of course it wouldn't be a real hobby if I didn't want to tell everyone all about it.
-      </p>
+      <mat-tab-group id="mat-tabs">
+        <mat-tab label="Projects" class="tab">
+          <mat-card class="display-card">
+            <mat-card-header>
+              <mat-card-title>
+                Snowflake Scheduling App
+              </mat-card-title>
+            </mat-card-header>
+            <ul>
+              <li>
+                <a href="https://snowflakeschedules.herokuapp.com" target="_blank">The app</a>
+              </li>
+              <li>
+                <a href="https://github.com/ejk2134/snowflake" target="_blank">The code</a>
+              </li>
+            </ul>
+            <p>
+              An app designed to simplify scheduling an event for multiple attendees, who all have gnarly schedules. Built with Node, Express,
+              AngularJS, using a Mongo database and Mongoose, styled using AngularJS Material.
+            </p>
+          </mat-card>
+          <mat-card class="display-card">
+            <ul>
+              <li>
+                Not currently deployed
+              </li>
+              <li>
+                <a href="https://github.com/ejk2134/todolist" target="_blank">The code</a>
+              </li>
+            </ul>
+            <p>
+              Add the things you need to do, send them to your trusty database, check them off when you're done, and delete them. Rinse,
+              repeat. Enjoy all the pretty colors while you do it. Built with Node, Express, jQuery, a SQL database using
+              Postgres, styled with Bootstrap.
+            </p>
+          </mat-card>
+          <mat-card>
+            <mat-card-header>
+              <mat-card-title>
+                Grow North
+              </mat-card-title>
+            </mat-card-header>
+          </mat-card>
+        </mat-tab>
+        <mat-tab label="Stuff I Like">
+          <div>
+            <h4>Weightlifting</h4>
+            <p>
+              One of my hobbies is weightlifting. Of course it wouldn't be a real hobby if I didn't want to tell everyone all about it.
+            </p>
+          </div>
+        </mat-tab>
+      </mat-tab-group>
     </div>
   </div>
   <!-- Right column -->
   <div class="column" fxFlex fxLayout="column" fxLayoutAlign="start">
+    <div id="name">
+      <h5>Evan Kearney</h5>
+    </div>
     <img width="450" alt="Headshot" src="assets/headshot.jpg" matTooltip="Me!" [matTooltipPosition]="'left'">
     <div id="links" fxLayout fxLayoutAlign="space-around">
       <a href="https://www.linkedin.com/in/evan-kearney/" matTooltip="LinkedIn" target="_blank">

@@ -1,17 +1,31 @@
 h5 {
-    margin: 5px;
+    margin: 15px;
 }
 
 .column {
     margin: 50px;
 }
 
+.display-card {
+    margin: 25px;
+    background: none;
+    color: black;
+}
+
+.tab {
+    overflow-y: scroll;
+}
+
 #links {
-    margin: 20px;
+    margin: 50px;
 }
 
 #mail {
     color: green;
+}
+
+#mat-tabs {
+    height: 80vh;
 }
 
 #name {

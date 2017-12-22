@@ -4,8 +4,18 @@
 @import "~@angular/material/prebuilt-themes/purple-green.css";
 
 body {
-    background: linear-gradient(to bottom right, rgb(216, 215, 215), rgb(202, 211, 246));
-    height: 100vh;
+    height: 95vh;
     width: 100vw;
     font-family: 'Playfair Display', serif;
+}
+
+html {
+    background: linear-gradient(to bottom right, rgb(216, 215, 215), rgb(230, 234, 246));
+}
+
+/* Override annoying Angular Material built-in */
+.mat-tab-group, mat-tab-link, .mat-tab-label {
+    font-family: none;
+    color: black;
+    font-size: 18px;
 }

@@ -4,8 +4,9 @@ import {
   MatButtonModule, 
   MatCheckboxModule, 
   MatIconModule, 
-  MatTooltipModule, 
-  MatExpansionModule
+  MatTooltipModule,
+  MatCardModule, 
+  MatTabsModule
 } from '@angular/material';
 //Flex package
 import {FlexLayoutModule} from '@angular/flex-layout';
@@ -17,7 +18,8 @@ import {FlexLayoutModule} from '@angular/flex-layout';
     MatCheckboxModule, 
     MatIconModule,
     MatTooltipModule,
-    MatExpansionModule,
+    MatCardModule, 
+    MatTabsModule,
     FlexLayoutModule
   ],
   exports: [
@@ -26,7 +28,8 @@ import {FlexLayoutModule} from '@angular/flex-layout';
     MatCheckboxModule, 
     MatIconModule,
     MatTooltipModule,
-    MatExpansionModule,
+    MatCardModule,
+    MatTabsModule,
     FlexLayoutModule,
   ],
   declarations: []
