@@ -1,0 +1,34 @@
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import {
+  MatButtonModule, 
+  MatCheckboxModule, 
+  MatIconModule, 
+  MatTooltipModule, 
+  MatExpansionModule
+} from '@angular/material';
+//Flex package
+import {FlexLayoutModule} from '@angular/flex-layout';
+
+@NgModule({
+  imports: [
+    CommonModule,
+    MatButtonModule, 
+    MatCheckboxModule, 
+    MatIconModule,
+    MatTooltipModule,
+    MatExpansionModule,
+    FlexLayoutModule
+  ],
+  exports: [
+    CommonModule,
+    MatButtonModule, 
+    MatCheckboxModule, 
+    MatIconModule,
+    MatTooltipModule,
+    MatExpansionModule,
+    FlexLayoutModule,
+  ],
+  declarations: []
+})
+export class MaterialModule { }

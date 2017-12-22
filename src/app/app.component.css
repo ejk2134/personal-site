@@ -1,0 +1,20 @@
+h5 {
+    margin: 5px;
+}
+
+.column {
+    margin: 50px;
+}
+
+#links {
+    margin: 20px;
+}
+
+#mail {
+    color: green;
+}
+
+#name {
+    text-align: center;
+    font-size: 80px;
+}
