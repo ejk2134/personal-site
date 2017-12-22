@@ -10,10 +10,14 @@ body {
 }
 
 html {
-    background: linear-gradient(to bottom right, rgb(216, 215, 215), rgb(230, 234, 246));
+    background: linear-gradient(to bottom right, rgb(216, 215, 215), rgb(137, 149, 177));
 }
 
-/* Override annoying Angular Material built-in */
+/* Override annoying Angular Material built-ins */
+.mat-card {
+    font-family: none;
+}
+
 .mat-tab-group, mat-tab-link, .mat-tab-label {
     font-family: none;
     color: black;
