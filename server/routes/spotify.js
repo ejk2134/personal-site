@@ -3,7 +3,6 @@ const router = express.Router();
 
 const request = require('request');
 const rp = require('request-promise');
-const SpotifyWebAPI = require('spotify-web-api-node')
 
 router.get('/', (req, res)=>{
     console.log('Spotify request');
@@ -45,7 +44,7 @@ router.get('/', (req, res)=>{
                 console.log('error:', err);
                 console.log('status code:', resp && resp.statusCode);
                 console.log('body:', body);
-                res.send(body);
+                res.send(body.items);
             })
         })
         .catch((err) => {

@@ -1,3 +1,13 @@
+<div>
+  <ul>
+    <li *ngFor="let track of tracks">
+      <p>{{track.rank}}</p>
+      <p>{{track.title}}</p>
+      <p>{{track.artists}}</p>
+      <p>{{track.albumArt}}</p>
+    </li>
+  </ul>
+</div>
 <div fxLayout>
   <!-- Left column -->
   <div class="column" fxFlex="65%" fxLayout="column" fxLayoutAlign="start center">
