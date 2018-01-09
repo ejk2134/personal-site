@@ -12,13 +12,15 @@ import {SpotifyService} from './spotify.service';
 import { TopTracksComponent } from './top-tracks/top-tracks.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ThingsilikeComponent } from './thingsilike/thingsilike.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TopTracksComponent,
     ProjectsComponent,
-    ThingsilikeComponent
+    ThingsilikeComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
