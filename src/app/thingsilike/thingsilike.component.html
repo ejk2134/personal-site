@@ -1,3 +1,10 @@
-<p>
-  thingsilike works!
-</p>
+<div>
+  <ul>
+    <li *ngFor="let track of tracks">
+      <p>{{track.rank}}</p>
+      <p>{{track.title}}</p>
+      <p>{{track.artists}}</p>
+      <p>{{track.albumArt}}</p>
+    </li>
+  </ul>
+</div>

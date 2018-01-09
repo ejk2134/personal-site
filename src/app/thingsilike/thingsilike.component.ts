@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { SpotifyService } from '../spotify.service';
+import { Track } from '../track';
 
 @Component({
   selector: 'app-thingsilike',
@@ -7,9 +9,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ThingsilikeComponent implements OnInit {
 
-  constructor() { }
+  tracks: Track[] = [];
 
-  ngOnInit() {
+  constructor(private spotifyService: SpotifyService) { }
+
+  public ngOnInit() {
+    this.spotifyService
+      .getTopTracks()
+      .subscribe(
+      (tracks) => {
+        console.log(tracks);
+        this.tracks = tracks;
+      }
+      )
   }
 
 }

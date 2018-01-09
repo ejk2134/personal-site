@@ -4,6 +4,9 @@ import {HttpModule} from '@angular/http';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MaterialModule} from './material/material.module';
 
+import {Router} from '@angular/router';
+import {AppRoutingModule} from './app-routing.module';
+
 import { AppComponent } from './app.component';
 import {SpotifyService} from './spotify.service';
 import { TopTracksComponent } from './top-tracks/top-tracks.component';
@@ -21,9 +24,14 @@ import { ThingsilikeComponent } from './thingsilike/thingsilike.component';
     BrowserModule,
     BrowserAnimationsModule,
     MaterialModule,
-    HttpModule
+    HttpModule,
+    AppRoutingModule
   ],
   providers: [SpotifyService],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule { 
+  constructor(router: Router){
+    console.log('Routes: ', JSON.stringify(router.config, undefined, 2));
+  }
+}

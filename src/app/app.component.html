@@ -1,4 +1,8 @@
-<div>
+<nav>
+  <a routerLink="/mystuff" routerLinkActive="active">Things I Like</a>
+</nav>
+<router-outlet></router-outlet>
+<!-- <div>
   <ul>
     <li *ngFor="let track of tracks">
       <p>{{track.rank}}</p>
@@ -7,7 +11,7 @@
       <p>{{track.albumArt}}</p>
     </li>
   </ul>
-</div>
+</div> -->
 <div fxLayout>
   <!-- Left column -->
   <div class="column" fxFlex="65%" fxLayout="column" fxLayoutAlign="start center">
