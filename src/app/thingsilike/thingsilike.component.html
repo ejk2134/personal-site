@@ -2,12 +2,14 @@
   <a routerLink="/" routerLinkActive="active">Home</a>
 </nav>
 <div>
-  <ul>
-    <li *ngFor="let track of tracks">
+  <mat-card *ngFor="let track of tracks" fxLayout="row" class="top-track-card">
+    <div fxFlex="20%" class="top-track-rank">
       <p>{{track.rank}}</p>
-      <p>{{track.title}}</p>
-      <p>{{track.artists}}</p>
-      <p>{{track.albumArt}}</p>
-    </li>
-  </ul>
+    </div>
+    <div fxFlex="20%">
+      <img [src]="track.albumArt">
+    </div>
+    <p>{{track.title}}</p>
+    <p>{{track.artists}}</p>
+  </mat-card>
 </div>
