@@ -2,6 +2,13 @@
   <a routerLink="/" routerLinkActive="active">Home</a>
 </nav>
 <div>
+  <p>
+    These are the 20 tracks I have listened to most on Spotify the last four weeks.
+    I hope to put some more information about my interests here but in the meantime
+    check out the tracks and send me an email if you want to recommend some music!
+  </p>
+</div>
+<div>
   <mat-card *ngFor="let track of tracks" fxLayout="row" class="top-track-card">
     <div fxFlex="20%" class="top-track-rank">
       <p>{{track.rank}}</p>
