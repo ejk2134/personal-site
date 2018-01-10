@@ -13,7 +13,7 @@ const spotifyRouter = require('./server/routes/spotify');
 
 const port = process.env.PORT || 3000;
 
-app.use(express.static(path.resolve(__dirname, 'dist')));
+app.use(express.static(path.resolve(__dirname, 'public')));
 
 app.use('/spotify', spotifyRouter);
 
