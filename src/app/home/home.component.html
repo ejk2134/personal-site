@@ -1,19 +1,23 @@
-<nav>
-  <a routerLink="/projects" routerLinkActive="active">My Projects</a>
-  <a routerLink="/mystuff" routerLinkActive="active">Things I Like</a>
-</nav>
 <div id="name">
-  <h5>Evan Kearney</h5>
+  <h1><strong><em>Evan Kearney</em></strong></h1>
 </div>
-<img width="450" alt="Headshot" src="assets/headshot.jpg" matTooltip="Me!" matTooltipPosition="left">
-<div id="links" fxLayout fxLayoutAlign="space-around">
-  <a href="https://www.linkedin.com/in/evan-kearney/" matTooltip="LinkedIn" target="_blank">
-    <img alt="LinkedIn Logo" src="assets/linkedin.png">
-  </a>
-  <a href="https://github.com/ejk2134" matTooltip="GitHub" target="_blank">
-    <img height="54px" alt="Github Logo" src="assets/github.png">
-  </a>
-  <a href="mailto:evanjkearney@gmail.com" matTooltip="email" target="_blank">
-    <img style="border-radius: 10px;" height="54px" alt="Email" src="assets/mail.svg">
-  </a>
+<div fxLayout>
+  <div fxLayout="column" fxFlex="66%" fxLayoutAlign="start center">
+    <img width="450" alt="Headshot" src="assets/headshot.jpg" matTooltip="Me!" matTooltipPosition="left">
+    <div id="links" fxLayout fxLayoutAlign="space-around">
+      <a href="https://www.linkedin.com/in/evan-kearney/" matTooltip="LinkedIn" target="_blank">
+        <img alt="LinkedIn Logo" src="assets/linkedin.png">
+      </a>
+      <a href="https://github.com/ejk2134" matTooltip="GitHub" target="_blank">
+        <img height="54px" alt="Github Logo" src="assets/github.png">
+      </a>
+      <a href="mailto:evanjkearney@gmail.com" matTooltip="email" target="_blank">
+        <img style="border-radius: 10px;" height="54px" alt="Email" src="assets/mail.svg">
+      </a>
+    </div>
+  </div>
+  <div id="nav" fxLayout="column" fxFlexAlign="start center">
+    <a id="projects" routerLink="/projects" routerLinkActive="active"><strong>My Projects</strong></a>
+    <a id="mystuff" routerLink="/mystuff" routerLinkActive="active"><strong>Some Things I Like</strong></a>
+  </div>
 </div>
