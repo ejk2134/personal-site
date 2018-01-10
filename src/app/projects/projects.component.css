@@ -1,0 +1,13 @@
+.display-card {
+    margin: 25px;
+    background: none;
+    color: black;
+}
+
+.display-header {
+    font-size: 28px;
+}
+
+.project-display-image {
+    width: 100%;
+}
